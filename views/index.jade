@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  ul
+    li 
+      a(href='/auth/github') GitHub Authentication
+    li 
+      a(href='/protected') Go to the Protected Area
+    li 
+      a(href='/logout') Logout
+  p Status: #{msg}
